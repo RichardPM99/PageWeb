@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------fin grid-----------------*/
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.fixed{
+    position: fixed;
+    background-color: mediumblue;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    top: 0px;
+}
+
+header h1{
+    color: #000;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+div.slider{
+
+    height: 70px
+}
+
+.fondo{
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: darkslateblue;
+}
+
+.slider{
+    color: #ffffff;
+}
+
+.slider a{
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    background-color: buttonface;
+    text-decoration: none;
+    transition: all .5s;
+}
+.slider a:hover{
+    background-color: windowframe;
+    transition: all .5s;
+}
+
+table {
+   width: 100%;
+   border: 1px solid #000;
+   background-color: activecaption;
+}
+th, td {
+   width: 50%;
+   text-align: center;
+   border: 1px solid ;
+}
